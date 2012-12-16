@@ -3,6 +3,6 @@ jroMI
 
 jroMI
 
-I keep python code for Jicamarca magneto-ionic modeling being developed with Levent and Pablo here in this repo.
+I keep here in this repo python code for Jicamarca magneto-ionic modeling being developed together with Levent and Pablo. --- Erhan
 
-The code requires the jropack module available from https://github.com/erhan-k/jropack.git
+jroMI code requires the jropack module available from https://github.com/erhan-k/jropack.git
