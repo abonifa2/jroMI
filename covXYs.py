@@ -118,7 +118,7 @@ def covs(px,py,uB,Bo,theta,uphi,uthe,Ne,h):
     phase=k0*deln*dr*1000
     A=(exp(-1j*phase)+ar**2*exp(1j*phase))*denom
     B=2*ar*sin(phase)*denom
-    C=exp(1j*k0*dr*1000*avn)
+    C=exp(-1j*k0*dr*1000*avn)                 # - sign added by BLG in 04.06.2013
     covXX=[];covXY=[];T=identity(3);R=T
     for i in range(200):    
         S=array([uthe[i],uphi[i]])                #transforms field vector from JROxyz- to th/phi-system
