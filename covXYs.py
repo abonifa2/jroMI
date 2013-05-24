@@ -144,7 +144,7 @@ if __name__=='__main__':
     px,py,uB,Bo,theta,uphi,uthe=geom(2*tx,2*ty,dr)
     #ionosphere specification
     h=arange(200)*dr                                # [km] height grid vector
-    Ne=8.0e12*exp(-h/180.-50.*exp(-h/60.))     
+    Ne=3.0e12*exp(-h/180.-50.*exp(-h/60.))     
     covXX,covXY=covs(px,py,uB,Bo,theta,uphi,uthe,Ne,h)
     plot(h,covXX); xlabel('Height (km)'); plot(h,covXY,color='r');
     grid('on'); show()

@@ -106,7 +106,7 @@ if __name__=='__main__':
 
     dr = 5.
     h  = arange(200)*dr
-    Ne=8.0e12*exp(-h/180.-50.*exp(-h/60.))
+    Ne=3.0e12*exp(-h/180.-50.*exp(-h/60.))
 
     CovFigGrid(tx,ty,5.,Ne,h)
 

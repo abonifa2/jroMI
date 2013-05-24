@@ -9,7 +9,7 @@ h=arange(200)*dr
 sf = 0;
 
 fig = figure(figsize = (20,15))
-fig = figure()
+fig = figure(1)
 fig.subplots_adjust(hspace=.7,wspace = 0.7)
 
 for ir in range(13):
@@ -17,7 +17,7 @@ for ir in range(13):
     tx=0.0245*(ir-6);ty=-tx
     print "tx-ty in 1D profile : ", tx, ty
     px,py,uB,Bo,theta,uphi,uthe=geom(tx,ty,dr) 
-    Ne=8.0e12*exp(-h/180.-50.*exp(-h/60.))     
+    Ne=3.0e12*exp(-h/180.-50.*exp(-h/60.))     
     covXX,covXY=covs(px,py,uB,Bo,theta,uphi,uthe,Ne,h)
 
     ax = fig.add_subplot(13, 1, sf)
@@ -26,7 +26,7 @@ for ir in range(13):
 
     ax.set_xticks((0,500,1000)); 
         
-    ax.set_yticks((0.000,0.015,0.035));  
+    ax.set_yticks((0.000,0.014,0.007));  
         
     sf +=1
         
